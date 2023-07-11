@@ -15,7 +15,7 @@
 
         <!-- 配置hibernate -->
         <!-- 数据库方言 -->
-        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <!-- 连接自动提交 -->
         <property name="hibernate.connection.autocommit">true</property>
         <!-- 显示hibernate持久层操作，即sql语句 -->
@@ -25,10 +25,12 @@
         <!-- 指定自动生成数据表的策略 -->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
+        <mapping resource="News.hbm.xml"></mapping>
+
         <!-- 使用二级缓存. -->
-        <property name="cache.use_second_level_cache">true</property>
+        <!--property name="cache.use_second_level_cache">true</property-->
         <!-- 允许查询缓存, -->
-        <property name="cache.use_query_cache">true</property>
+        <!--property name="cache.use_query_cache">true</property-->
 
 
     </session-factory>

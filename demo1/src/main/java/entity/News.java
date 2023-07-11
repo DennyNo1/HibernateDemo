@@ -3,6 +3,7 @@ package entity;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
